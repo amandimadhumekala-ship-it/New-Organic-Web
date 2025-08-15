@@ -1,0 +1,125 @@
+.about-content .about-header {
+    text-align: center;
+    border-bottom: 4px solid #4CAF50;
+    padding-bottom: 10px;
+    width: 80%;
+    margin: auto;
+    padding-top: 2%;
+    
+}
+
+/* .about-content-column {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color:white;
+}
+
+.about-content-img {
+    border-radius: 25px;
+    width: 50%;
+    height: auto;
+    box-shadow: 6px 6px 12px rgba(246, 244, 244, 0.771);
+    max-width: 600px;
+    
+}
+
+.about-content- p {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 30px;
+    text-align: justify;
+    max-width: 50%;
+}
+
+.about-content { 
+    padding-bottom: 20px;
+    border-bottom: 4px solid #4CAF50;
+    background-color: white;
+ } 
+
+@media (max-width: 768px) {
+    .about-content-column img, .about-content-column p {
+        max-width: 45%;
+    }
+
+    .about-content-column p {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-content-column {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content-column img {
+        width: 80%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .about-content-column p {
+        max-width: 100%;
+        padding-left: 0;
+        font-size: 16px;
+    }
+} */
+
+.about-content { 
+    padding-bottom: 20px;
+    border-bottom: 4px solid #5bc45f;
+    background-color: white;
+    
+ } 
+
+.image-container {
+  position: relative; /* Needed for overlay positioning */
+  display:block;
+  
+  
+}
+
+.image-container img {
+  display:block;
+  width: 100%;
+  height:100vh;
+  
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 20px; /* Distance from the bottom */
+  left: 20px; /* Distance from the left */
+  color: white;
+  background: rgba(83, 101, 86, 0.5); /* Semi-transparent background */
+  padding: 150px 132px;
+  border-radius: 8px;
+  max-width: 80%;
+  font-size: 1.8rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+    .image-container, .overlay-text {
+        max-width: 45%;
+    }
+
+    .overlay-text {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}

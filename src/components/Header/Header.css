@@ -1,0 +1,65 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background: url('C:\Users\HP\Desktop\organic-web\organic-frontend\src\Assets\Header6.jpeg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.559);
+}
+
+.header-contents {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.header-contents h2 {
+  font-size: 3.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+  /* Animation */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header-contents button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgb(4, 136, 61);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 17%;
+}
+
+.header-contents button:hover {
+  background-color: #a8a8a8;
+  transform: scale(1.05);
+}
